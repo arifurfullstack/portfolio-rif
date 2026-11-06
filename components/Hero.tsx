@@ -39,24 +39,24 @@ export default function Hero() {
       </div>
 
       {/* Headshot Centered in Front of PORTFOLIO Word */}
-      <div
-        className="absolute bottom-0 left-1/2 -translate-x-1/2 z-10 w-[280px] sm:w-[400px] md:w-[480px] lg:w-[560px] pointer-events-none flex justify-center"
-        data-build="pop"
-      >
+      <div className="absolute inset-x-0 bottom-0 z-10 flex justify-center items-end pointer-events-none">
         <div
-          className="relative w-full h-[440px] sm:h-[580px] md:h-[680px] lg:h-[760px]"
+          data-build="pop"
+          className="relative w-[300px] sm:w-[420px] md:w-[500px] lg:w-[580px] h-[480px] sm:h-[620px] md:h-[720px] lg:h-[800px] flex justify-center items-end pointer-events-auto group cursor-pointer"
           style={{
-            maskImage: "linear-gradient(to bottom, black 55%, transparent 98%)",
-            WebkitMaskImage: "linear-gradient(to bottom, black 55%, transparent 98%)",
+            maskImage: "linear-gradient(to bottom, black 65%, transparent 100%)",
+            WebkitMaskImage: "linear-gradient(to bottom, black 65%, transparent 100%)",
           }}
+          title="Md. Arifur Rahman (Hover to reveal natural color)"
         >
           <Image
             src="/headshot.png"
             alt={personal.name}
             fill
             priority
-            sizes="(max-width: 768px) 340px, 560px"
-            className="object-contain object-bottom filter grayscale contrast-125"
+            unoptimized
+            sizes="(max-width: 768px) 340px, 580px"
+            className="object-contain object-bottom filter grayscale contrast-115 group-hover:grayscale-0 group-hover:contrast-100 transition-all duration-500 drop-shadow-[0_15px_35px_rgba(0,0,0,0.85)]"
           />
         </div>
       </div>

@@ -378,6 +378,8 @@ export default function RobotCursors() {
       const finish = () => {
         el.classList.remove("building");
         el.classList.add("built");
+        el.style.transform = "";
+        el.style.transition = "";
         buildingSetRef.current.delete(el);
 
         // Fade wireframe
