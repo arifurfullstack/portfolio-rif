@@ -1,0 +1,49 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 480 >>
+stream
+BT
+/F1 20 Tf
+50 740 Td
+(ALEX RIVERA - AI SYSTEMS & FULL STACK ENGINEER) Tj
+/F1 10 Tf
+0 -25 Td
+(San Francisco, CA | alex@rivera.dev | github.com/alexrivera | linkedin.com/in/alexrivera) Tj
+0 -30 Td
+(SUMMARY: Full stack systems engineer building production agentic AI architectures and sub-100ms real-time apps.) Tj
+0 -30 Td
+(CORE STATS: 4.2M+ Monthly Requests | 99.98% System Uptime | 14+ Autonomous Agent Workflows Shipped) Tj
+0 -30 Td
+(EXPERIENCE: Lead Systems Engineer @ NeuralFlow AI | Senior Full-Stack Engineer @ HyperScale Systems) Tj
+0 -30 Td
+(PROJECTS: AgentOS Orchestrator, StreamForge Realtime Engine, VectorMesh Distributed RAG) Tj
+0 -30 Td
+(EDUCATION: B.S. in Computer Science, UC Berkeley) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000227 00000 n 
+0000000305 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+840
+%%EOF

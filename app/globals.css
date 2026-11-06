@@ -1,26 +1,169 @@
 @import "tailwindcss";
 
+@theme {
+  --color-accent: #ff3b2f;
+  --color-zinc-950: #09090b;
+  --font-anton: var(--font-anton), Impact, sans-serif;
+  --font-brush: var(--font-caveat-brush), cursive;
+  --font-sans: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #09090b;
+  --foreground: #fafafa;
+  --accent: #ff3b2f;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #09090b;
+  color: #fafafa;
+  font-family: var(--font-sans);
+}
+
+/* Build mode: hide until built */
+html.build-mode [data-build] {
+  visibility: hidden;
+}
+
+html.build-mode [data-build].building,
+html.build-mode [data-build].built {
+  visibility: visible !important;
+}
+
+/* Giant word PORTFOLIO metallic gradient & sheen */
+.portfolio-metallic {
+  background: linear-gradient(
+    180deg,
+    #ff4d40 0%,
+    #ff3b2f 22%,
+    #b91c1c 45%,
+    #3f0c0a 75%,
+    #141416 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.portfolio-sheen {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.45) 48%,
+    rgba(255, 255, 255, 0.85) 50%,
+    rgba(255, 255, 255, 0.45) 52%,
+    transparent 80%
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: sheen-travel 6.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+@keyframes sheen-travel {
+  0% {
+    background-position: 250% 0;
+  }
+  50% {
+    background-position: -150% 0;
+  }
+  100% {
+    background-position: -150% 0;
+  }
+}
+
+/* Robot animations */
+@keyframes antenna-pulse {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(0.9);
+    filter: drop-shadow(0 0 2px currentColor);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 8px currentColor);
+  }
+}
+
+@keyframes robot-blink {
+  0%, 90%, 100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  95% {
+    transform: scaleY(0.1);
+    opacity: 0.2;
+  }
+}
+
+.animate-antenna {
+  animation: antenna-pulse 1.4s ease-in-out infinite;
+}
+
+.animate-blink {
+  animation: robot-blink 3.2s infinite;
+}
+
+/* Endless Marquee */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 32s linear infinite;
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  width: max-content;
+  animation: marquee-reverse 34s linear infinite;
+}
+
+.marquee-container:hover .animate-marquee,
+.marquee-container:hover .animate-marquee-reverse {
+  animation-play-state: paused;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff3b2f;
+}
+
+/* Interactive transitions */
+button, a {
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
 }
