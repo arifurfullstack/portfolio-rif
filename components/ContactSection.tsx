@@ -45,7 +45,7 @@ export default function ContactSection() {
             Whether you&apos;re architecting an autonomous agent runtime, designing real-time infrastructure, or need an elite engineer to ship zero-to-one.
           </p>
 
-          {/* Action Buttons: Direct Email & One-Click Copy */}
+          {/* Action Buttons: Direct Email, Copy, and Agency Website */}
           <div className="pt-4 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
             <a
               href={`mailto:${personal.email}`}
@@ -55,6 +55,18 @@ export default function ContactSection() {
               <Send className="w-4 h-4" />
               <span>Send Message</span>
             </a>
+
+            {personal.website && (
+              <a
+                href={personal.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-build="pop"
+                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-zinc-900 border border-zinc-800 text-zinc-300 font-mono text-xs hover:bg-zinc-800 hover:text-white active:scale-95 focus-visible:ring-2 focus-visible:ring-[#ff3b2f] focus-visible:outline-none cursor-pointer"
+              >
+                <span>Visit huipper.com</span>
+              </a>
+            )}
 
             <button
               onClick={copyEmail}

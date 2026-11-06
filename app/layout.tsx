@@ -29,9 +29,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alex Rivera | AI Systems & Full Stack Engineer",
+  title: "Md. Arifur Rahman | Full-Stack Developer & Founder of Huipper",
   description:
-    "Personal portfolio engineered with Next.js 15, live robot cursors, and sub-100ms precision.",
+    "Portfolio of Md. Arifur Rahman — Full-Stack Software Developer, Tech Entrepreneur, and Founder & CEO of Huipper based in Dhaka, Bangladesh.",
   icons: {
     icon: "/favicon.ico",
   },

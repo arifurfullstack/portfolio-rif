@@ -12,25 +12,29 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 5 0 obj
-<< /Length 480 >>
+<< /Length 580 >>
 stream
 BT
-/F1 20 Tf
+/F1 18 Tf
 50 740 Td
-(ALEX RIVERA - AI SYSTEMS & FULL STACK ENGINEER) Tj
+(MD. ARIFUR RAHMAN) Tj
 /F1 10 Tf
+0 -20 Td
+(Full-Stack Developer | Tech Entrepreneur | Founder & CEO of Huipper) Tj
+0 -18 Td
+(Dhaka, Bangladesh | contact@huipper.com | huipper.com | github.com/arifurfullstack) Tj
 0 -25 Td
-(San Francisco, CA | alex@rivera.dev | github.com/alexrivera | linkedin.com/in/alexrivera) Tj
-0 -30 Td
-(SUMMARY: Full stack systems engineer building production agentic AI architectures and sub-100ms real-time apps.) Tj
-0 -30 Td
-(CORE STATS: 4.2M+ Monthly Requests | 99.98% System Uptime | 14+ Autonomous Agent Workflows Shipped) Tj
-0 -30 Td
-(EXPERIENCE: Lead Systems Engineer @ NeuralFlow AI | Senior Full-Stack Engineer @ HyperScale Systems) Tj
-0 -30 Td
-(PROJECTS: AgentOS Orchestrator, StreamForge Realtime Engine, VectorMesh Distributed RAG) Tj
-0 -30 Td
-(EDUCATION: B.S. in Computer Science, UC Berkeley) Tj
+(SUMMARY: Full-stack engineer & product builder passionate about turning ideas into scalable digital products.) Tj
+0 -20 Td
+(VENTURES: Founder & CEO @ Huipper (Global Software Agency) | Founder @ Jadubot (AI SaaS Venture)) Tj
+0 -20 Td
+(FRONTEND: React.js, Next.js 15, TypeScript, JavaScript, Tailwind CSS, Shadcn UI, GSAP, Framer Motion) Tj
+0 -20 Td
+(BACKEND: Node.js, NestJS, Laravel, REST APIs, PostgreSQL, MongoDB, WebSockets, Payment Gateways) Tj
+0 -20 Td
+(DEVOPS & AI: AI Automation, Jadubot AI Platform, Linux VPS, Nginx, Cloudflare, Docker, Vercel) Tj
+0 -20 Td
+(EDUCATION: Innovation & Entrepreneurship at Daffodil International University) Tj
 ET
 endstream
 endobj
@@ -45,5 +49,5 @@ xref
 trailer
 << /Size 6 /Root 1 0 R >>
 startxref
-840
+940
 %%EOF
